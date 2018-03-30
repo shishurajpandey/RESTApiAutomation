@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="9791" started-at="2018-02-05T06:08:13Z" finished-at="2018-02-05T06:08:22Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="9791" started-at="2018-02-05T06:08:13Z" finished-at="2018-02-05T06:08:22Z">
+      <class name="twitterApisExample.TwitterDeleteStatus">
+        <test-method status="PASS" signature="setup()[pri:0, instance:twitterApisExample.TwitterDeleteStatus@1e88b3c]" name="setup" is-config="true" duration-ms="294" started-at="2018-02-05T11:38:13Z" finished-at="2018-02-05T11:38:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="TwitterPostRequest()[pri:0, instance:twitterApisExample.TwitterDeleteStatus@1e88b3c]" name="TwitterPostRequest" duration-ms="3212" started-at="2018-02-05T11:38:13Z" finished-at="2018-02-05T11:38:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TwitterPostRequest -->
+        <test-method status="PASS" signature="TwitterGetStatusRequest()[pri:0, instance:twitterApisExample.TwitterDeleteStatus@1e88b3c]" name="TwitterGetStatusRequest" duration-ms="4760" started-at="2018-02-05T11:38:16Z" depends-on-methods="twitterApisExample.TwitterDeleteStatus.TwitterPostRequest" finished-at="2018-02-05T11:38:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TwitterGetStatusRequest -->
+        <test-method status="PASS" signature="DeleteTweet()[pri:0, instance:twitterApisExample.TwitterDeleteStatus@1e88b3c]" name="DeleteTweet" duration-ms="1502" started-at="2018-02-05T11:38:21Z" depends-on-methods="twitterApisExample.TwitterDeleteStatus.TwitterGetStatusRequest" finished-at="2018-02-05T11:38:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DeleteTweet -->
+      </class> <!-- twitterApisExample.TwitterDeleteStatus -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
