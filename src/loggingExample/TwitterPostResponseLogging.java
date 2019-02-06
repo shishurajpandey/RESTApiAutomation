@@ -47,8 +47,8 @@ public class TwitterPostResponseLogging {
        // .headers()
       //  .ifValidationFails()
      //   .ifError()
-       .ifStatusCodeIsEqualTo(200)
-         .statusCode(200);
+          .ifStatusCodeIsEqualTo(200)
+          .statusCode(200);
         
 	}
 	

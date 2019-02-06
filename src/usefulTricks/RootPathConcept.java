@@ -26,8 +26,6 @@ public class RootPathConcept
 	{
 		RestAssured.baseURI="https://api.twitter.com";
 		RestAssured.basePath="/1.1/statuses";
-	
-	
 	}
 
 	

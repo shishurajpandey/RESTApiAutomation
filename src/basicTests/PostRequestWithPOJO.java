@@ -42,7 +42,7 @@ public class PostRequestWithPOJO {
 	@Test
 	public void PostResponseDemoTest()
 	{
-		Map<String, Double> location=new HashMap<>();
+    	Map<String, Double> location=new HashMap<>();
 		location.put("lat",-33.8669710);
 		location.put("lng",151.1958750);
 		
@@ -51,6 +51,7 @@ public class PostRequestWithPOJO {
 		types.add("shoe_store");
 		
 		PlacesAddModal places=new PlacesAddModal();
+		
 		places.setLocation(location);
 		places.setTypes(types);
 		places.setName("Google Shoes!");

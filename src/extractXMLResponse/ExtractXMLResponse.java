@@ -3,7 +3,7 @@ package extractXMLResponse;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
-import com.github.scribejava.apis.GitHubApi;
+//import com.github.scribejava.apis.GitHubApi;
 
 import io.restassured.RestAssured;
 import io.restassured.response.Response;

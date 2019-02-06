@@ -3,6 +3,8 @@ package assertExamples;
 import static io.restassured.RestAssured.given;
 
 import static org.hamcrest.Matchers.*;
+
+import org.testng.Assert;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
@@ -72,6 +74,8 @@ public class TwitterHardAssertExample {
          .body("user[0].name", equalTo("SHISHU RAJ PANDEY") )
 	     .body("user.name", hasItem("SHISHU RAJ PANDEY") )
 	     .body("entities.hashtags[0].size()", equalTo(0));
+	
+    //	Assert.assertEquals(actual, expected);
 	
 	//String responseString=response.asString();
 	

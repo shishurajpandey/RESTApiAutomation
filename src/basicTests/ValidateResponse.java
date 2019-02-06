@@ -2,7 +2,6 @@ package basicTests;
 
 import static io.restassured.RestAssured.given;
 
-import org.codehaus.groovy.transform.EqualsAndHashCodeASTTransformation;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import static org.hamcrest.Matchers.equalTo;
@@ -27,6 +26,7 @@ public class ValidateResponse {
 	{
 		System.out.println("Hello ");
 	given()
+	.contentType(ContentType.JSON)
 		.param("units", "imperial")
 		.param("origins", "Washington,DC")
 		.param("destinations", "New+York+City,NY")

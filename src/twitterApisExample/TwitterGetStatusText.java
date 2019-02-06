@@ -50,6 +50,7 @@ public class TwitterGetStatusText {
 	
 	JsonPath jspath=new JsonPath(responseString);
     tweetId= jspath.get("id_str");
+   // jspath.ge
 	System.out.println("The username is "+jspath.get("user.name"));
 	System.out.println("The location is "+jspath.get("user.location"));
 	System.out.println("*********************************************************************");

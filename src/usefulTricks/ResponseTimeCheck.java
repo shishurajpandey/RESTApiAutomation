@@ -28,9 +28,7 @@ public class ResponseTimeCheck
 	public void setup()
 	{
 		RestAssured.baseURI="https://api.twitter.com";
-		RestAssured.basePath="/1.1/statuses";
-	
-	
+		RestAssured.basePath="/1.1/statuses";	
 	}
 
 	
@@ -56,6 +54,7 @@ public class ResponseTimeCheck
         .statusCode(200)
        // .time(lessThan(800L), TimeUnit.MILLISECONDS)    //Using response time as assertion. If response time will be less than 800 miliseconds then test case will be passed
         .time(lessThan(3L), TimeUnit.SECONDS)
+       // .time(matcher, timeUnit)
         .body("user[0].name", equalTo("SHISHU RAJ PANDEY"))
 	    .body("user.name", hasItem("SHISHU RAJ PANDEY") )
 	    .body("user.screen_name", hasItem("SHISHURAJ_123"))

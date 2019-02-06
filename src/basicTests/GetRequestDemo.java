@@ -17,6 +17,7 @@ public class GetRequestDemo {
 	{
 		RestAssured.baseURI= "https://maps.googleapis.com";
 		RestAssured.basePath="/maps/api";
+		//RestAssured.DEFAULT_URI="https://maps.googleapis.com";
 	}
 	
 	@Test(enabled=true)

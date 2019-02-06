@@ -37,7 +37,7 @@ public class GetRequestDemo2 {
 	@Test 
 	public void GetResponseBody()
 	{
-		Response response=
+		Response response= 
 	given()
 		.param("units", "imperial")
 		.param("origins", "Washington,DC")

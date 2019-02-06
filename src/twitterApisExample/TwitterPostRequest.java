@@ -39,8 +39,7 @@ public class TwitterPostRequest {
      .when()
          .post("update.json")
      .then()
-         .statusCode(200);
-        
+         .statusCode(200);    
 	}
 	
 }
